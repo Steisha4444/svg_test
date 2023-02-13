@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    id="svg2"
+    sodipodi:docname="Pravyy-Sektor-Sign.svg"
+    viewBox="0 0 500 500"
+    version="1.1"
+    inkscape:version="0.48.3.1 r9886"
+  >
+  <defs
+      id="defs4"
+    >
+    <radialGradient
+        id="radialGradient5725"
+        gradientUnits="userSpaceOnUse"
+        cx="986.09"
+        cy="1455"
+        r="200"
+        gradientTransform="matrix(-1.2396 -1.2396 1.25 -1.25 -432.39 4982.1)"
+        inkscape:collect="always"
+      >
+      <stop
+          id="stop24488"
+          style="stop-color:#000000;stop-opacity:0"
+          offset="0"
+      />
+      <stop
+          id="stop24490"
+          style="stop-color:#000000;stop-opacity:0"
+          offset=".51952"
+      />
+      <stop
+          id="stop24492"
+          style="stop-color:#000000;stop-opacity:.5"
+          offset="1"
+      />
+    </radialGradient
+    >
+  </defs
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="24"
+      fit-margin-left="0"
+      pagecolor="#ffffff"
+      inkscape:window-height="1000"
+      inkscape:window-maximized="1"
+      inkscape:zoom="0.35"
+      inkscape:window-x="0"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="470.71428"
+      inkscape:cy="-44.285673"
+      fit-margin-top="0"
+      fit-margin-right="0"
+      fit-margin-bottom="0"
+      inkscape:window-width="1280"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(-18.571 11.924)"
+    >
+    <g
+        id="g5526"
+        transform="translate(104.57 -1702.9)"
+      >
+      <g
+          id="g4314"
+          transform="matrix(.82781 0 0 1.3263 -292.95 -555.49)"
+        >
+        <rect
+            id="rect4299"
+            style="color:#000000;fill:#da251c"
+            transform="translate(0 -147.64)"
+            height="377"
+            width="604"
+            y="1841.5"
+            x="250"
+        />
+        <path
+            id="rect4303"
+            style="color:#000000;fill:#1f1a17"
+            d="m854 2030v188.5h-604v-188.5z"
+            sodipodi:nodetypes="ccccc"
+            inkscape:connector-curvature="0"
+            transform="translate(0 -147.64)"
+        />
+      </g
+      >
+      <path
+          id="rect3792"
+          style="color:#000000;fill:#ffffff"
+          inkscape:connector-curvature="0"
+          d="m163.97 1723.9-35.915 77.046 10.701 226.99h-41.399v19.262h51.097l-1.1372 93.767 16.653 17.12 16.72-17.12-1.1372-93.767h51.03v-19.262h-41.332l10.701-226.99-35.982-77.046zm-138.04 104.27v271.67h106.21v-33.774h-65.744l38.255-164.59-78.718-73.303zm276.15 0-78.718 73.303 38.255 164.59h-65.744v33.774h106.21v-271.67z"
+      />
+      <rect
+          id="rect5499"
+          style="color:#000000;fill:url(#radialGradient5725)"
+          inkscape:export-ydpi="45"
+          inkscape:export-filename="/home/grin/Рабочий стол/ukrop200-1.png"
+          height="500"
+          width="500"
+          inkscape:export-xdpi="45"
+          y="1691"
+          x="-86"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
