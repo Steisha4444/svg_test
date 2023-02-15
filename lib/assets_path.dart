@@ -1,3 +1,3 @@
 class UnifiedPracticeAssetsPath {
-  static const String kBodyMapFrontSvg = 'assets/body-map-front.svg';
+  static const String kBodyMapFrontSvg = 'assets/test.svg';
 }

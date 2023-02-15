@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/body_privider.dart';
+import 'package:flutter_application_1/body_provider.dart';
 import 'package:flutter_application_1/file_service.dart';
 import 'package:provider/provider.dart';
 

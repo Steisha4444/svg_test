@@ -3,7 +3,10 @@ import 'package:flutter_application_1/draw_on_path.dart';
 import 'package:path_drawing/path_drawing.dart';
 import 'package:touchable/touchable.dart';
 
-import 'body_privider.dart';
+import 'body_provider.dart';
+import 'file_service.dart';
+import 'svg_model.dart';
+import 'utils.dart';
 
 class BodyPainter extends CustomPainter {
   final BuildContext context;
@@ -16,12 +19,13 @@ class BodyPainter extends CustomPainter {
     var paint = Paint()..strokeWidth = 1;
 
     /// Scale math goes here, we scale up each path to match it's canvas size zone.
-    final xScale = size.width / 244 / 1.65;
-    final yScale = size.height / 567;
+    SVG svgSize = bodyPartProvider.svgSize;
+    final double xScale = size.width / svgSize.width;
+    final double yScale = size.height / svgSize.height;
     final Matrix4 matrix4 = Matrix4.identity();
-    matrix4.scale(xScale, yScale);
+    matrix4.scale(xScale);
 
-    bodyPartProvider.bodyPartsToRender.forEach((bodyPart) {
+    bodyPartProvider.planogramsToRender.forEach((bodyPart) {
       Path path = parseSvgPathData(bodyPart.path);
       if (bodyPartProvider.selectedBodyPart == bodyPart.name) {
         bodyPart.activeColor = bodyPart.selectedColor;
@@ -30,8 +34,7 @@ class BodyPainter extends CustomPainter {
 
       ourCanvas.drawPath(
         path.transform(matrix4.storage).shift(
-              Offset((size.width - 244 * xScale) / 55,
-                  (size.height - 567 * yScale) / 55),
+              Offset(double.parse(bodyPart.x), double.parse(bodyPart.y)),
             ),
         paint
           ..color = Color(
@@ -44,7 +47,24 @@ class BodyPainter extends CustomPainter {
               newBodyPartId: bodyPart.id.toString());
         },
       );
-      canvas.drawTextOnPath(bodyPart.name, path);
+      // final textPainter = getTextPainterFor(
+      //   bodyPart.name,
+      //   TextStyle(fontSize: 5, color: Colors.black),
+      //   textDirection: TextDirection.ltr,
+      // );
+      // textPainter.paint(
+      //   canvas,
+
+      //   Offset(double.parse(bodyPart.x), double.parse(bodyPart.y)),
+      // );
+      canvas.drawTextOnPath(
+          bodyPart.name,
+          path.transform(matrix4.storage).shift(
+                Offset(double.parse(bodyPart.x), double.parse(bodyPart.y)),
+              ),
+          xScale,
+          double.parse(bodyPart.x),
+          double.parse(bodyPart.y));
     });
   }
 

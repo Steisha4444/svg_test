@@ -19,6 +19,9 @@ class SvgComponent {
   int? id = 0;
   bool? isSelected = false;
   String? name;
+  String? x = '0.0';
+  String? y = '0.0';
+  String? transform;
   String? fillColor;
   String? path;
   String? selectedColor = '0xFFC00000';
@@ -26,6 +29,9 @@ class SvgComponent {
   SvgComponent({
     this.id,
     this.isSelected,
+    this.x = '0.0',
+    this.y = '0.0',
+    this.transform,
     this.name,
     this.fillColor,
     this.path,

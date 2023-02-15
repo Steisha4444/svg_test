@@ -6,7 +6,7 @@ import 'package:touchable/touchable.dart';
 
 import 'body_canvas.dart';
 
-import 'body_privider.dart';
+import 'body_provider.dart';
 
 class BodyChart extends StatefulWidget {
   @override

@@ -2,6 +2,7 @@ library draw_on_path;
 
 import 'package:flutter/material.dart';
 
+import 'svg_model.dart';
 import 'utils.dart';
 
 enum TextAlignment { up, mid, bottom }
@@ -22,7 +23,10 @@ extension DrawOnPath on Canvas {
 
   void drawTextOnPath(
     String text,
-    Path path, {
+    Path path,
+    double size,
+    double x,
+    double y, {
     TextStyle textStyle = const TextStyle(fontSize: 5, color: Colors.black),
     double letterSpacing = 0.0,
     bool autoSpacing = false,
@@ -35,7 +39,13 @@ extension DrawOnPath on Canvas {
     }
 
     final pathMetrics = path.computeMetrics();
+    // print("pathMetrics");
+    // print(pathMetrics);
     final pathMetricsList = pathMetrics.toList();
+    // print("pathMetricsList");
+    // pathMetricsList.forEach((element) {
+    //   print(element.toString());
+    // });
 
     if (autoSpacing && text.length > 1) {
       var totalLength = 0.0;
@@ -70,10 +80,13 @@ extension DrawOnPath on Canvas {
           .getTangentForOffset(currDist + charSize.width / 2)!;
       final currLetterPos = tangent.position;
       final currLetterAngle = tangent.angle;
+      var bodyPartProvider;
 
       save();
       translate(currLetterPos.dx, currLetterPos.dy);
       rotate(-currLetterAngle);
+      scale(size);
+
       textPainter.paint(
         this,
         currLetterPos
@@ -87,6 +100,7 @@ extension DrawOnPath on Canvas {
                   getTranslateYFactorForTextAlignment(textAlignment),
             ),
       );
+
       restore();
       currDist += charSize.width + letterSpacing;
 
